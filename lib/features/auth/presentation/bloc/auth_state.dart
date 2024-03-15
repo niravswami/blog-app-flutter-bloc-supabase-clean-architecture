@@ -17,3 +17,12 @@ final class AuthFailure extends AuthState {
   final String message;
   AuthFailure(this.message);
 }
+
+final class AuthLogoutLoading extends AuthState {}
+
+final class AuthLogoutSuccess extends AuthState {}
+
+final class AuthLogoutFailure extends AuthState {
+  final String message;
+  AuthLogoutFailure(this.message);
+}

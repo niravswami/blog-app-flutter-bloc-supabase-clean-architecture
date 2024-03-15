@@ -106,4 +106,22 @@ class AuthRepositoryImpl implements AuthRepository {
       return left(Failure(e.message));
     }
   }
+
+  Future<Either<Failure, User>> logout() async {
+    try {
+      final user = UserModel(email: "", id: "", name: "");
+      if (!await (connectionChecker.isConnected)) {
+        final session = remoteDataSource.currentUserSession;
+
+        if (session == null) {
+          return right(user);
+        }
+      }
+      await remoteDataSource.logout();
+
+      return right(user);
+    } on ServerException catch (e) {
+      return left(Failure(e.message));
+    }
+  }
 }
