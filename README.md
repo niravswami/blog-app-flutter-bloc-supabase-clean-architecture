@@ -1,6 +1,6 @@
 # blog_bloc_app
 
-| App | Screenshots | |
+| App | Screenshots | a | b |
 | --- | --- | --- | --- |
 | ![App Screenshot](https://github.com/niravswami/blog-app-flutter-bloc-supabase-clean-architecture/blob/main/lib/core/assets/images/screenShots/simulator_screenshot_B06BDCFB-7DD0-44E8-AA99-FBB335345AA7.png) | ![App Screenshot](https://raw.githubusercontent.com/niravswami/blog-app-flutter-bloc-supabase-clean-architecture/main/lib/core/assets/images/screenShots/simulator_screenshot_B06BDCFB-7DD0-44E8-AA99-FBB335345AA7.png)|
 
